@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--yellow1);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+} 
+
+::-webkit-scrollbar{
+    color: var(--yellow6);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--yellow6);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+  
+.section {
+    margin: 5%;
+    min-height: 90vh;
+    overflow-x: hidden;
+}
+
+.section-1{
+    display: flex;
+}
+
+.section-1 .landing-1-img{
+    margin-top: 5%;
+    flex: 0 0 50%;
+}
+
+.section-1 .landing-1-txt{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.section-1 img{
+    height: 75%;
+    width: 55%;
+}
+
+.section-1 h1{
+    font-family: 'Lora';
+    font-size: 100px;
+}
+
+.section-1 h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 50px;
+}
+
+.section-1 button{
+    margin-top: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    min-width: 20rem;
+    background-color: var(--yellow6);
+    font-size: 15px;
+    transition: 0.7s ease-in-out;
+}
+
+.section-1 button:hover{
+    transform: scale(1.2);
+    transition: 0.7s ease-in-out;
+}
+
+.section-2 h2{
+    font-size: 30px;
+    text-transform: uppercase
+}
+
+.section-2-boxes-container{
+    display: flex;
+    margin: 2%;
+}
+
+.section-2-box{
+    border: 2px solid var(--white);
+    padding: 30px;
+    margin-right: 35px;
+    text-align: justify;
+}
+
+.section-2-box h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.section-2-box p{
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 h4{
+    margin: 5%;
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.section-4{
+    display: flex;
+}
+
+.section-4 .landing-4-img{
+    margin-top: 5%;
+    flex: 0 0 60%;
+}
+
+.section-4 .landing-4-txt{
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.section-4 img{
+    height: 75%;
+    width: 85%;
+}
+
+.section-4 h1{
+    font-family: 'Lora';
+    font-size: 50px;
+}
+
+.section-4 p{
+    font-family: 'Lora';
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 15px;
+}

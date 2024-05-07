@@ -1,0 +1,87 @@
+.overall-login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container h1{
+    font-family: "Montserrat";
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container label{
+    font-family: "Montserrat";
+    font-weight: 500;
+    padding: 5px;
+    align-self: flex-start;
+}
+
+.container input{
+    width: 30rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.container .display-error{
+    color: red;
+}
+
+.container button{
+    margin-top: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    min-width: 30rem;
+    background-color: var(--yellow6);
+    font-size: 15px;
+}
+
+.container button:hover{
+    background-color: var(--yellow5);
+}
+
+.container h4{
+    font-family: "Montserrat";
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+@media(max-width:495px)
+{
+    .container h1{
+        font-size: 25px;
+    }
+
+    .container input{
+        width: 20rem;
+    }
+    
+    .container .display-error{
+        color: red;
+    }
+    
+    .container button{
+        min-width: 20rem;
+    }
+
+    .container h4{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,202 @@
+.notex-overall-container{
+    margin: 50px;
+}
+
+.notex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.search{
+    margin-left: 1.5rem;
+}
+
+.search input{
+    margin: 2%;
+    padding: 12px;
+    min-width: 35rem;
+    border: 2px solid var(--yellow6);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.search input:focus{
+    outline: 1px solid var(--yellow5);
+}
+
+.add-notes-button-container{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.add-notes-button-container button{
+    margin: 2%;
+    padding: 12px;
+    min-width: 8rem;
+    background-color: var(--yellow6);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-notes-button-container button:hover{
+    background-color: var(--yellow5);
+}
+
+.add-notes-popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.add-notes-popup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--yellow6);
+    padding: 2%;
+}
+
+.add-notes-popup-content span{
+    min-width: 300px;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.add-notes-popup-content input,textarea{
+    margin: 5%;
+    border: 2px solid var(--yellow6);
+    padding: 10px;
+    resize: vertical;
+    min-width: 300px;
+}
+
+.add-notes-popup-content textarea{
+    min-height: 190px;
+}
+
+.add-notes-popup-content button{
+    margin-top: 10%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    min-width: 8rem;
+    background-color: var(--yellow6);
+}
+
+.add-notes-popup-content button:hover{
+    background-color: var(--yellow5);
+}
+
+.view-notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(33.33% - 4%), 1fr));
+    gap: 2%;
+    margin: 30px;
+  }
+  
+  .view-notes {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--yellow5);
+    margin-bottom: 1%;
+    width: 100%;
+    text-align: justify;
+  }
+  
+
+.view-notes button{
+    margin: 5px;
+    border: none;
+    background-color: var(--yellow2);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.1s all ease-in;
+}
+
+.view-notes button:hover{
+    border-radius: 20px;
+    background-color: var(--yellow3);
+    border: 2.5px solid var(--yellow2);
+    cursor: pointer;
+    transition: 0.1s all ease-out;
+}
+
+@media(max-width:925px){
+    .search input{
+        margin: 2%;
+        padding: 12px;
+        min-width: 25rem;
+        border: 2px solid var(--yellow6);
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    
+    .view-notes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(50% - 4%), 1fr));
+        gap: 2%;
+        margin: 30px;
+      }
+}
+
+@media(max-width:720px){
+    .search input{
+        margin: 2%;
+        padding: 12px;
+        min-width: 15rem;
+        border: 2px solid var(--yellow6);
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    
+    .view-notes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(100% - 4%), 1fr));
+        gap: 2%;
+        margin: 30px;
+      }
+}
+
+@media(max-width:575px){
+    .notex-overall-container{
+        margin: 10px;
+    }
+
+    .search input{
+        margin: 2%;
+        padding: 10px;
+        min-width: 12rem;
+        border: 2px solid var(--yellow6);
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    
+    .view-notes-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(100% - 4%), 1fr));
+        gap: 2%;
+        margin: 30px;
+      }
+
+      .add-notes-button-container button{
+        margin: 2%;
+        padding: 8px;
+        min-width: 4rem;
+        background-color: var(--yellow6);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        text-wrap: nowrap;
+    }
+}
