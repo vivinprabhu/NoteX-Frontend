@@ -17,7 +17,8 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () =>{
-    axios.get("http://localhost:3001/api/logout/deleteCookie" , {withCredentials:true})
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    axios.get(`${backendUrl}api/logout/deleteCookie` , {withCredentials:true})
     .then((res)=>{
       // console.log(res.data)
       localStorage.removeItem("loggedIn");
