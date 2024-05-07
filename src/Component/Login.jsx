@@ -36,7 +36,7 @@ const Login = () => {
     try {
       const backendUrl = process.env.REACT_APP_BACKEND_URL;
       const { data: res } = await axios.post(`${backendUrl}api/auth/`, data);
-      // console.log(res.message);
+      console.log(res.message);
       dispatch(login({ value: { username: data.email } }));
       localStorage.setItem("loggedIn", true);
 
