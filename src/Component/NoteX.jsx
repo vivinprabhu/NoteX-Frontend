@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 
+import Navbar from '../Component/SubComponent/Navbar'
+
 import '../Assests/css/NoteX.css'
 import '../Assests/css/colors.css'
-import Navbar from './SubComponent/Navbar';
 
 axios.defaults.withCredentials = true
 

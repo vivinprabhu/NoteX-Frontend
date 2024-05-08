@@ -20,9 +20,9 @@ const Navbar = () => {
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
     axios.get(`${backendUrl}api/logout/deleteCookie` , {withCredentials:true})
     .then((res)=>{
-      // console.log(res.data)
-      localStorage.removeItem("loggedIn");
       navigate("/login")
+      console.log(res.data)
+      localStorage.removeItem("loggedIn");
     })
     .catch(error => {
       console.error('Logout error:', error);
