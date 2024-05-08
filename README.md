@@ -42,8 +42,8 @@ REACT_APP_BACKEND_URL = http://localhost:[your_backend_port_number]/
 ![Screenshot 2024-05-08 113148](https://github.com/vivinprabhu/NoteX-Frontend/assets/87113980/8e18b6bc-cceb-467e-af78-3004c0328669)
 
 <h1>Hosting issues</h1>
-1) Hosted in render website with minimal resources. So somestimes website will be slow. But when you run locally it will work faster you expect.
-2) Can't able to make the httpOnly cookie sameSite:'strict' or 'lax'. If strict CRUD operations are not performing and while with lax the cookie may disappear while refreshing.
-3) So while run this project loaclly make sure your cookie property change to sameSite: 'strict' from sameSite: 'none'.
+<li>Hosted in render website with minimal resources. So somestimes website will be slow. But when you run locally it will work faster you expect.</li>
+<li>Can't able to make the httpOnly cookie sameSite:'strict' or 'lax'. If strict CRUD operations are not performing and while with lax the cookie may disappear while refreshing.</li>
+<li>So while run this project loaclly make sure your cookie property change to sameSite: 'strict' from sameSite: 'none'.</li> <br></br>
 
 If anyone knows the solution for the above mentioned issues mail me at cseskct255vivinprabhu.s@gmail.com
