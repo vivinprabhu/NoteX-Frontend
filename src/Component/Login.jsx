@@ -41,6 +41,7 @@ const Login = () => {
       localStorage.setItem("loggedIn", true);
       document.cookie = `token= ${res.data};`
       navigate("/noteX");
+      window.location.reload();
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setError(error.response.data.message);

@@ -23,6 +23,7 @@ const Navbar = () => {
       navigate("/login")
       console.log(res.data)
       localStorage.removeItem("loggedIn");
+      window.location.reload();
     })
     .catch(error => {
       console.error('Logout error:', error);
