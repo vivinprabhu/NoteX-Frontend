@@ -39,7 +39,7 @@ const Login = () => {
       console.log(res.message);
       dispatch(login({ value: { username: data.email } }));
       localStorage.setItem("loggedIn", true);
-      document.cookie = `token= ${res.data};`
+      // document.cookie = `token= ${res.data};`
       navigate("/noteX");
     } catch (error) {
       if (error.response && error.response.status === 401) {
