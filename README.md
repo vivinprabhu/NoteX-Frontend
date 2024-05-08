@@ -17,7 +17,7 @@
 <li>All web pages are responsive accross all screens.</li>
 <li>Implemented appearance on Scroll (AOS) library in landing page.</li>
 <li>Using Redux toolkit for efficient state management.</li>
-<li>Conditional routing, if you logged in util the user logge dout, the user won't navigate to Login page.</li>
+<li>Conditional routing, if you logged in util the user logout, the user won't navigate to Login/Register page.</li>
 
 
 <h1>To run the project</h1>
