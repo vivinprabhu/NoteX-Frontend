@@ -12,7 +12,7 @@ import Register from './Component/Register';
 import NoteX from './Component/NoteX';
 
 export default function RouteApp() {
-    const loggedIn = localStorage.getItem('loggedIn'); //comment this while local running
+    // const loggedIn = localStorage.getItem('loggedIn'); //comment this while local running
     return (
         <Provider store={store}>
             <Router>
@@ -20,14 +20,8 @@ export default function RouteApp() {
                     <Route path="/" element={<Landing />}></Route>
                     <Route path="/login" element={localStorage.getItem('loggedIn') === 'true' ? <Navigate to="/noteX" /> : <Login />}></Route>
                     <Route path="/register" element={localStorage.getItem('loggedIn') === 'true' ? <Navigate to="/noteX" /> : <Register />}></Route>
-                    
-                    {/* hosting */}
-                    {/* comment this while local running */}
-                    <Route path="/noteX" element={localStorage.getItem('loggedIn') ? (!loggedIn ? <Navigate to="/login" /> : <NoteX />) : null} />                     
-                   
-                    {/* local */}
-                    {/* uncomment this while local running (optional)  */}
-                    {/* <Route path="/noteX" element={<NoteX />}></Route> */}
+                                       
+                    <Route path="/noteX" element={<NoteX />}></Route>
 
                 </Routes>
             </Router>
